@@ -24,3 +24,9 @@ dw_wiki_scraper-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# erlang term storage where crawly keeps run info
+dets_simple_storage
+
+# the db files of results
+*.sqlite*

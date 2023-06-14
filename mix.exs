@@ -7,7 +7,11 @@ defmodule DwWikiScraper.MixProject do
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      docs: [
+        main: "WikiScraper",
+        extras: ["readme.md"]
+      ]
     ]
   end
 
@@ -24,7 +28,10 @@ defmodule DwWikiScraper.MixProject do
     [
       {:crawly, "~> 0.15.0"},
       {:floki, "~> 0.34.3"},
-      {:jason, "~> 1.4.0"}
+      {:jason, "~> 1.4.0"},
+      {:ecto_sql, "~> 3.10.1"},
+      {:ecto_sqlite3, "~> 0.10.3"},
+      {:ex_doc, "~> 0.27", only: :dev, runtime: false},
     ]
   end
 end
