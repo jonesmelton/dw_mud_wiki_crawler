@@ -33,4 +33,4 @@ permanently, as has happened with previous player-run resources.
 This repo does not include the db file resulting from a crawl. If for some reason you need one
 contact me.
 
-As of june 2023 a crawl was 
+As of june 2023 a crawl was 2700ish pages and took about 90 minutes with this config.
